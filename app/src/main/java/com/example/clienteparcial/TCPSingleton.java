@@ -6,10 +6,11 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
+import java.io.Serializable;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class TCPSingleton extends Thread {
+public class TCPSingleton extends Thread  {
 
 
     private static TCPSingleton tcpsingleton;
@@ -29,10 +30,6 @@ public class TCPSingleton extends Thread {
     private Socket socket;
     private BufferedWriter writer;
     private String mensaje = "";
-    private MainActivity observer;
-
-    //Metodo de subscripcion del observer - el observer es para :
-
 
 
     public void run() {

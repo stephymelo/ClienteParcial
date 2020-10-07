@@ -83,4 +83,4 @@ public class Page2 extends AppCompatActivity implements View.OnClickListener,Ser
 
     }
 
-    }
+}

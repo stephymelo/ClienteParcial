@@ -1,11 +1,13 @@
 package com.example.clienteparcial;
 
-public class Circulo {
+import java.io.Serializable;
+
+public class Circulo implements Serializable {
     private int posX,posY;
     private String nombre;
     private int r,g,b;
 
-    public Circulo(String nombre,int posX,int posY,int r,int g,int b){
+    public Circulo(String nombre,int posX,int posY,int r,int g,int b) {
         this.nombre=nombre;
         this.posX=posX;
         this.posY=posY;
